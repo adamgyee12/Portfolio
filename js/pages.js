@@ -1,14 +1,14 @@
 
 // Handle page transitions
 document.getElementById("giotto").onclick = function () {
-    location.href = "https://adamgyee12.github.io/Portfolio/giotto.html";
+    location.href = "http://localhost:8000/giotto.html";
     //https://adamgyee12.github.io/Portfolio/giotto.html
 };
 
 document.getElementById("tmp").onclick = function () {
-    location.href = "https://adamgyee12.github.io/Portfolio/tmp.html";
+    //location.href = "https://adamgyee12.github.io/Portfolio/tmp.html";
     //https://adamgyee12.github.io/Portfolio/giotto.html
-    //"http://localhost:8000/tmp.html"
+    location.href = "http://localhost:8000/tmp.html";
 };
 
 document.getElementById("pawws").onclick = function () {
@@ -17,8 +17,9 @@ document.getElementById("pawws").onclick = function () {
 };
 
 document.getElementById("esports").onclick = function () {
-    location.href = "https://adamgyee12.github.io/Portfolio/esports.html";
+    //location.href = "https://adamgyee12.github.io/Portfolio/esports.html";
     //https://adamgyee12.github.io/Portfolio/giotto.html
+    location.href = "http://localhost:8000/esports_datavis.html";
 };
 
 document.getElementById("comic").onclick = function () {

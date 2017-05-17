@@ -1,3 +1,41 @@
+.arc text {
+  font: 10px;
+  text-anchor: middle;
+}
+
+.w3-padding-256{padding-top:256px!important;padding-bottom:256px!important}
+
+#giotto-intro {
+  background-image: url(../images/giotto_cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .5;
+  padding: 0;
+}
+
+#tmp-intro {
+  background-image: url(../images/TMP_cover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .5;
+  padding: 0;
+}
+
+#esports-intro {
+  background-image: url(../images/esports_plain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .5;
+  padding: 0;
+}
+
+.hover {
+  opacity: 50%;
+}
+
 .rowbutton {
   display:inline-block;
 }
