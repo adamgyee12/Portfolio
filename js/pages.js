@@ -17,7 +17,7 @@ document.getElementById("pawws").onclick = function () {
 };
 
 document.getElementById("esports").onclick = function () {
-    location.href = "https://adamgyee12.github.io/Portfolio/esports.html";
+    location.href = "https://adamgyee12.github.io/Portfolio/esports_datavis.html";
     //https://adamgyee12.github.io/Portfolio/giotto.html
     //location.href = "http://localhost:8000/esports_datavis.html";
 };
