@@ -1,3 +1,10 @@
+iframe {
+  -webkit-transform:scale(0.75);
+  -moz-transform:scale(0.75);
+  -o-transform:scale(0.75);
+  transform:scale(0.75);
+}
+
 .arc text {
   font: 10px;
   text-anchor: middle;
@@ -5,6 +12,14 @@
 
 .w3-padding-256{padding-top:256px!important;padding-bottom:256px!important}
 
+.title-container {
+  border-radius: 8px;
+  width: 70%;
+}
+.header_text {
+  color: black;
+  background-color: white;
+}
 #giotto-intro {
   background-image: url(../images/giotto_cover.jpg);
   background-size: cover;
