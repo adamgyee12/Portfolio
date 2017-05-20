@@ -29,6 +29,33 @@ iframe {
   padding: 0;
 }
 
+#comic-intro {
+  background-image: url(../images/comic_cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .5;
+  padding: 0;
+}
+
+#vfx-intro {
+  background-image: url(../images/gaming_cover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .5;
+  padding: 0;
+}
+
+#pawws-intro {
+  background-image: url(../images/pawws_cover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .5;
+  padding: 0;
+}
+
 #tmp-intro {
   background-image: url(../images/TMP_cover.png);
   background-size: cover;
