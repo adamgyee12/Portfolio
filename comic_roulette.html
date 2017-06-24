@@ -56,62 +56,60 @@
     </div>
 
     <div class="w3-content w3-padding-16" align="center">
-      <img class="w3-image" src="images/comic/screen3.png" style="width:25%">
-      <img class="w3-image" src="images/comic/screen2.png" style="width:25%">
-      <img class="w3-image" src="images/comic/screen4.png" style="width:25%">
+      <img class="w3-image" src="images/comic/screen3_small.png" style="width:25%">
+      <img class="w3-image" src="images/comic/animation_roulette.gif" style="width:25%">
+      <img class="w3-image" src="images/comic/screen4_small.png" style="width:25%">
     </div>
 
 
-    <div class="w3-content w3-padding-32">
-      <div class="col-md-2">
-      </div>
-      <div class="col-md-4" align="center">
-        <img class="w3-image" src="images/comic/animation_roulette.gif" style="width:50%">
-      </div>
-      <div class="col-md-4 w3-padding-16">
-        <p>The comic a user contributes to is chosen by random accompanied by a roulette-style animation. The image that the roulette wheel lands on is the only context of the comic that the user is allowed to see while contributing their own panel to the strip. </p><p>Once the user has completed the next panel of the story, they are able to see the comic in its entirety before it is released back to the wheel to find the next artist to continue the story. </p>
-      </div>
-      <div class="col-md-2">
+
+    <div class="w3-content w3-padding-16">
+      <div class="w3-content">
+        <h2><strong>Motivation</strong></h2>
+        <p>At the heart of many compelling stories, jokes, and games is the mechanic of the unexpected twist. When an audience has an expectations for the way a story will unfold, the author has the opportunity to catch them off guard, adding to the story’s entertainment. In this project, I wanted to explore the ways in which individuals could both contribute to a story, yet still be caught off-guard as it unfolds. </p>
+
+        <h2><strong>User Flow</strong></h2>
+        <p>The comic a user contributes to is chosen by random accompanied by a roulette-style mechanic. The image that the roulette wheel lands on is the only context of the comic that the user is allowed to see while contributing their own panel to the strip. Once the user has completed the next panel of the story, they are able to see the comic in its entirety before it is released back to the wheel to find the next artist to continue the story. </p>
+        <p>While I’ve designed a login page for ComicRoulette, the type of crowdsourcing and collaboration doesn’t necessarily require an account. Comics are stored in a centralized database, retrieved when a user’s roulette lands on it, and then is appended and restored in the database. However, accounts could be useful for tracking previous, completed comics.</p>
+
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="w3-content w3-padding-32">
-      <div class="col-md-3">
-      </div>
-      <div class="col-md-4 w3-padding-16">
-        <p>While I’ve designed a login page for ComicRoulette, the type of crowdsourcing and collaboration doesn’t necessarily require an account. Comics are stored in a centralized database, retrieved when a user’s roulette lands on it, and then is appended and restored in the database. </p><p>However, accounts could be useful for tracking previous, completed comics.</p>
-      </div>
-      <div class="col-md-4" align="center">
-        <img class="w3-image" src="images/comic/screen1.png" style="width:50%">
-      </div>
+<img class="w3-image" src="images/comic/userflow.png" style="">
 
-    </div>
+<div class="w3-content w3-padding" style="max-width:1564px">
+  <div class="w3-content">
 
 
     <div class="w3-content w3-padding-16" style="display:inline-block">
 
-      <h2><strong>Motivation and Process</strong></h2>
+      <h2><strong>Process</strong></h2>
+      <h2><i>Paper Prototyping</i></h2>
+      <p>In order to test the concept and user flow of ComicRoulette, I created paper prototypes. The low-fidelity screens allowed me to quickly user test and iterate on the flow and better understand the users’ mental model of the application.</p>
 
-      <!--<p><strong>The Goal</strong></p>-->
-      <p>Growing up, my friends and I would find ourselves in separate classes throughout the day at school. In passing time between classes, we found ourselves passing back and fourth partially completed comic strips. We would continually add on to each story, contributing one panel at a time, not knowing where the plot was going to go next.</p>
-      <p>To recreate this type of interaction in a mobile application, I began paper prototyping a pass-and-play comic strip builder. The goal of this prototype was to see if people were inspired to collaboratively create comics.</p>
+      <div class="w3-padding-32" align="center">
+        <img class="w3-image" src="images/comic/paperproto.jpg" style="width:40%">
+      </div>
+
+      <p>Testers responded positively to the crowdsourcing aspect of getting handed an incomplete comic and contributing to it. From these tests, it became clear that a local version of the gameplay would be useful for parties or car rides. Due to this feedback, I decided to create a local pass-and-play game mode along with the original online crowdsourcing mode.</p>
+
+      <h2><i>Creating the MVP</i></h2>
+      <p>To move from design to minimum viable product, I coded ComicRoulette in Android Studio and included the two game modes as determined in user testing. I focused on the drawing, sharing, and crowdsourcing aspects when I was creating the MVP. I utilized a canvas ink toolkit to handle much of the drawing, but had to extend the toolkit in order to add undo functionality. The video below shows off the local pass-and-play functionality.</p>
+
+      <div class="w3-content" align="center">
+        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/R9azhE1CUXw?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <p>I additionally created a server in Node.js in order to handle the roulette randomness and allow for many users to contribute to the same comic. The video below shows off this functionality.</p>
+
+      <div class="w3-content" align="center">
+        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/q6QgmyZFfkI?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
 
     </div>
 
-    <div class="w3-content w3-padding-16">
-      <!--<p><strong>The Goal</strong></p>-->
-      <p>Within ComicRoulette, I experimented with two modes of play: a local pass and play, and an online roulette-style play. The pass and play mode is designed for social settings such as a party or a road trip. The online roulette mode is intended for an individual to collaborate with other comic-drawers around the world.</p>
-    </div>
-
-    <!--This online feature doesn't require an account, only an internet connection. When users play the roulette mode, they are given a random, partially completed comic. They can then contribute the next panel to the story, and the comic is stored away until another user joins to add their creative thought.-->
-
-    <div class="w3-content" align="center">
-      <iframe width="100%" height="500px" src="https://www.youtube.com/embed/R9azhE1CUXw?rel=0" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <div class="w3-content" align="center">
-      <iframe width="100%" height="500px" src="https://www.youtube.com/embed/q6QgmyZFfkI?rel=0" frameborder="0" allowfullscreen></iframe>
-    </div>
   <!-- End page content -->
 
   <!-- Footer -->
