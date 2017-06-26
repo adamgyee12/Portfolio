@@ -34,8 +34,14 @@
 <div class="w3-content w3-padding" style="max-width:1564px">
 
   <!-- Project Section -->
-  <div class="w3-content w3-padding-32">
+  <div class="w3-content">
 
+    <div class="w3-content">
+      <h2><strong>Project Length:</strong> 3 months</h2>
+      <h2><strong>Advising Professor:</strong> Jason Hong</h2>
+      <h2><strong>Team Members:</strong> Sharon Rajkumar, Bharadwaj Ramachandran, Joonho Park</h2>
+      <br/>
+    </div>
     <!--
     <div align="left">
       <strong>My Role: </strong>Developer, UX Designer<br/>
@@ -47,36 +53,54 @@
   -->
 
     <div class="w3-content">
-      <p>
-      As ubiquitous sensing and computing is becoming more and more common in today's world, it is increasingly more difficult to keep tabs on what information is being collected around you. The Giotto Internet of Things (IoT) Expedition is a project focused on <span style="font-weight: 400;">advancing the state of the art for privacy for the Internet of Things. </span>
-      <br/><br/>The main goal of Giotto is to grant end-users awareness of all nearby IoT devices which are actively collecting data about them.
-      By the time I joined this project, the architecture for a system that aggregates and stores super-sensor information was already built. This system, called <a href="https://cmu.buildingdepot.org" target="_blank" rel="noopener noreferrer">Building Depot</a>, allows for rich sensor data to be access and shared. With this in place, our team was positioned to create a layer of abstraction between this raw data and the end users, keeping their privacy in mind along the way.
-      </p>
-      <img align="center" class="w3-image" src="images/giotto/giotto_map.png"></img>
-      <p>
-      In order to gauge how end users view and value their privacy in the context of ubiquitous applications, our team ideated a plethora of potential IoT use cases. We used these along with student surveys to determine the important insight that users think IoT applications are extremely interesting and helpful, but are timid to provide personal data in order to fuel said applications.
-      </p>
+      <p>Giotto is a project aimed towards increasing the capabilities of humans interacting with ubiquitous devices and sensors. This Internet of Things (IoT) expedition keeps privacy at its core, and creates a framework for developers to create secure IoT applications.</p>
+
       <div class="w3-content w3-padding-16" align="center">
-        <img class="w3-image" src="images/giotto/1.png" style="width:35%; padding-top: 3px;">
-        <img class="w3-image" src="images/giotto/2.png" style="width:35%; padding-top: 3px;">
-        <img class="w3-image" src="images/giotto/3.png" style="width:35%; padding-top: 3px;">
-        <img class="w3-image" src="images/giotto/4.png" style="width:35%; padding-top: 3px;">
+        <img class="w3-image" src="images/giotto/contextcard.png" style="width:100%">
       </div>
-      <div class="w3-content w3-padding-64">
+
+      <h2><strong>Motivation</strong></h2>
+      <p>For IoT applications and systems, streams of user data collected from connected devices is crucial. This data allows for unique and interesting solutions and interactions. However, in the current state of IoT, user-friendly privacy control is often extremely limited, if it exists at all.</p>
+
+      <h2><strong>Architecture</strong></h2>
+      <p>Our team created two services to create a new paradigm for IoT privacy policies. The first is <a href="https://cmu.buildingdepot.org" target="_blank"><strong>BuildingDepot</strong></a>, which handles the storing of data streams from sensors, which can be combined and used to answer specific queries. The second service is <strong>ActiveMap</strong>, which is where user-controlled privacy policies regarding their data are enforced.</p>
+
+      <div class="w3-content w3-padding-16" align="center">
+        <img class="w3-image" src="images/giotto/architect.png" style="width:90%">
+      </div>
+
+      <h2><strong>User Privacy Policy Control</strong></h2>
+      <p>User-controlled privacy policies are at the core of Giotto. In order to allow users the ability to dynamically update who can have access to their data streams, we designed a structure and interface that can be used to quickly and easily group permissions into buckets.</p>
+
+      <div class="w3-content w3-padding-16" align="center">
+        <img class="w3-image" src="images/giotto/screens.png" style="width:100%">
+      </div>
+
+      <h2><strong>Process</strong></h2>
+      <h2><i>Scenarios and User Testing</i></h2>
+      <p>In order to gauge how end users view and value their privacy in the context of ubiquitous applications, our team ideated a plethora of potential IoT use cases. We used these along with student surveys to determine the important insight that users think IoT applications are extremely interesting and helpful, but are timid to provide personal data in order to fuel said applications.</p>
+
+    </div>
+  </div>
+
+  <div align="center">
+    <img class="w3-image" src="images/giotto/scenarios.png" style="width:100%">
+  </div>
+
+  <div class="w3-content w3-padding" style="max-width:1564px">
+    <div class="w3-content">
+
+      <div class="w3-content w3-padding-16">
         <p>We additionally discovered that people are comfortable sharing varying levels of personal information to different groups of people. This insight led us to the idea of creating a tier-based API to handle how sensor-collected information is shared. Each of these Tiers has access to a different level of granularity when it comes to sharing data. Based on how each individual buckets others into these tiers, they have complete control over who can see/access certain sensory-driven information about them. </p>
       </div>
-      <div class="w3-content w3-padding-16" align="center">
-        <img class="w3-image" src="images/giotto/1onboard.png" style="width:35%">
-        <img class="w3-image" src="images/giotto/2onboard.png" style="width:35%">
-      </div>
 
       <div class="w3-content w3-padding-16" align="center">
-        <img class="w3-image" src="images/giotto/3onboard.png" style="width:25%">
-        <img class="w3-image" src="images/giotto/4onboard.png" style="width:25%">
-        <img class="w3-image" src="images/giotto/5onboard.png" style="width:25%">
+        <img class="w3-image" src="images/giotto/survey.png" style="width:100%">
       </div>
 
-      <p>The main use case that we decided to focus on to convey this tier-based system was location, which I prototyped in order to validate our assumptions of user's attitudes towards their privacy.</p>
+      <h2><i>Low-Fidelity Prototyping</i></h2>
+
+      <p>The main use case that we decided to focus on to convey this tier-based system was location, which I prototyped in order to test and validate our assumptions of user's attitudes towards their privacy.</p>
       <div class="w3-content w3-padding-16" align="center">
         <img class="w3-image" src="images/giotto/giotto_proto1.png" style="width:25%">
         <img class="w3-image" src="images/giotto/giotto_proto2.png" style="width:25%">
